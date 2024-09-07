@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React from "react";
 import {
@@ -14,6 +14,7 @@ import { useState, useEffect } from "react";
 import { Separator } from "./ui/separator";
 import { ShoppingCart } from "lucide-react";
 
+import { formatPrice } from "@/lib/utils";
 import { buttonVariants } from "./ui/button";
 import Image from "next/image";
 const Cart = () => {
@@ -38,7 +39,7 @@ const Cart = () => {
           {isMounted ? itemCount : 0}
         </span>
       </SheetTrigger>
-      <SheetContent className="flex w-full flex-col pr-0 sm:max-w-lg">
+      <SheetContent className="flex bg-white w-full flex-col pr-0 sm:max-w-lg">
         <SheetHeader className="space-y-2.5 pr-6">
           <SheetTitle>Cart ({itemCount})</SheetTitle>
         </SheetHeader>
@@ -53,11 +54,11 @@ const Cart = () => {
                 </div>
                 <div className="flex">
                   <span className="flex-1">Transaction Fee</span>
-                  <span>fee</span>
+                  <span>{formatPrice(fee)}</span>
                 </div>
                 <div className="flex">
                   <span className="flex-1">Total</span>
-                  <span>cartTotal + fee</span>
+                  <span>{formatPrice(fee)}</span>
                 </div>
               </div>
 
