@@ -4,7 +4,7 @@ import { Icons } from './icons'
 import NavItems from './NavItems'
 import { buttonVariants } from './ui/button'
 import { cookies } from 'next/headers'
-
+import Cart from './Cart'
 const Navbar = async () => {
     const nextCookies = cookies()
     const user=null
@@ -75,7 +75,7 @@ const Navbar = async () => {
                     )}
   
                     <div className='ml-4 flow-root lg:ml-6'>
-                      Cart components
+                    <Cart/>
                     </div>
                   </div>
                 </div>
