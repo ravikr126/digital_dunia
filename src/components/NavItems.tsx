@@ -1,7 +1,7 @@
 'use client'
 
 import { PRODUCT_CATEGORIES } from '@/config'
-import { useOnClickOutside } from '@/hooks/use-on-click-outside'
+import { useOnClickOutside } from '@/hooks/use-on-click-outside' //use for if we click outside the navbar thenit will click
 import { useEffect, useRef, useState } from 'react'
 import NavItem from './NavItem'
 
