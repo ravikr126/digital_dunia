@@ -1,7 +1,14 @@
-import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import { Button, buttonVariants } from "@/components/ui/button";
-import { ArrowDownToLine, CheckCircle, Icon, Leaf } from "lucide-react";
-import Link from "next/link";
+import MaxWidthWrapper from '@/components/MaxWidthWrapper'
+import {
+  Button,
+  buttonVariants,
+} from '@/components/ui/button'
+import {
+  ArrowDownToLine,
+  CheckCircle,
+  Leaf,
+} from 'lucide-react'
+import Link from 'next/link'
 
 const perks = [
   {
@@ -22,11 +29,11 @@ const perks = [
     description:
       "We've pledged 1% of sales to the preservation and restoration of the natural environment.",
   },
-];
+]
+
 export default function Home() {
   return (
-    <MaxWidthWrapper>
-      <>
+    <>
       <MaxWidthWrapper>
         <div className='py-20 mx-auto text-center flex flex-col items-center max-w-3xl'>
           <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
@@ -82,8 +89,6 @@ export default function Home() {
           </div>
         </MaxWidthWrapper>
       </section>
-
-      </>
-    </MaxWidthWrapper>
-  );
+    </>
+  )
 }
